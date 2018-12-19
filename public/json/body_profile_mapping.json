@@ -1,0 +1,341 @@
+{
+  "18-27": {
+    "type": "age",
+    "synonyms": [
+      "18 27",
+      "teen",
+      "teenage"
+    ],
+    "values": [
+      "tops"
+    ]
+  },
+  "39+": {
+    "type": "age",
+    "synonyms": [
+      "39+"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "28-38": {
+    "type": "age",
+    "synonyms": [
+      "28 38",
+      "adult",
+      "elder"
+    ],
+    "values": [
+      "handbags",
+      "sweaters",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "tall": {
+    "type": "height",
+    "synonyms": [
+      "tall"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "average": {
+    "type": "height",
+    "synonyms": [
+      "average"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "short": {
+    "type": "height",
+    "synonyms": [
+      "short",
+      "short height"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "dark": {
+    "type": "skintone",
+    "synonyms": [
+      "dark",
+      "dusky"
+    ],
+    "values": [
+      "sweaters",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers"
+    ]
+  },
+  "fair": {
+    "type": "skintone",
+    "synonyms": [
+      "fair"
+    ],
+    "values": [
+      "sweaters",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers"
+    ]
+  },
+  "wheatish": {
+    "type": "skintone",
+    "synonyms": [
+      "wheatish",
+      "brown skin",
+      "wheat colour",
+      "wheat color"
+    ],
+    "values": [
+      "sweaters",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers"
+    ]
+  },
+  "pear": {
+    "type": "bodyshape",
+    "synonyms": [
+      "pear",
+      "pear shaped",
+      "pear shaped body",
+      "pear body"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "apple": {
+    "type": "bodyshape",
+    "synonyms": [
+      "apple",
+      "apple shaped",
+      "fat",
+      "apple shaped body",
+      "apple body",
+      "fat body"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "rectangle": {
+    "type": "bodyshape",
+    "synonyms": [
+      "rectangle",
+      "rectangle shaped",
+      "rectangle shaped body",
+      "rectangle body"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  },
+  "hourglass": {
+    "type": "bodyshape",
+    "synonyms": [
+      "hourglass",
+      "curvy",
+      "hourglass body",
+      "curvy body"
+    ],
+    "values": [
+      "casual shoes",
+      "handbags",
+      "sweaters",
+      "flats",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "kurtas",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "heels",
+      "jeans"
+    ]
+  }
+}

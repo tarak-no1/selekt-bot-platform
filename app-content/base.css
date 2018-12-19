@@ -1,0 +1,553 @@
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+.animations h4 {
+    margin: 100px auto 27px;
+}
+.content-home .animations h4 {
+    margin: 100px auto 27px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-home .animations h5 {
+    margin: 0 auto 5px;
+  font-family: 'Open Sans', sans-serif;
+    width: 410px
+}
+
+.content-home .animations .title {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #1F2933;
+    margin: 0 auto 30px
+}
+.content-home h4,
+.content-home h5 {
+    font-weight: 300;
+    text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}.content-home h3 {
+    font-size: 18px;
+    letter-spacing: .4px;
+    text-align: center;
+    margin: 0 auto;
+   font-family: 'Open Sans', sans-serif;
+    line-height: 1.45
+}
+
+.content-home h4 {
+    font-size: 34px;
+    letter-spacing: .7px;
+    color: #1F2933
+}
+
+.content-home h5 {
+    color: #484d51;
+    font-size: 18px;
+    letter-spacing: .4px
+}
+
+.content-home .animations .description {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .3px;
+    text-align: center;
+    color: #484d51;
+    width: 310px;
+    margin: 0 auto
+}
+
+.content-home .animations-inner {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: start;
+    justify-content: left;
+}
+
+.content-home .animation {
+    width: 32%;
+    margin: 50px 0
+}
+
+.content-home .animation-image {
+   margin: 0 auto;
+    background: url('../app-images/chat_icons.png');
+    background-size: cover;
+    height: 200px;
+    width:200px;
+}
+
+.content-home .animation-image img {
+    height: 200px;
+    width: 200px;
+    max-height: 200px;
+
+}
+.btn-primary:hover{
+    background-color:#1ed0d0 !important;
+    border-color:#1ed0d0 !important
+}
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+}
+
+body:before {
+  z-index: -1;
+  background: white;
+  background-size: cover;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  z-index: 1;
+  overflow: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+img.logo {
+  height: 18px;
+  margin-right: 2vw;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.service-icon {
+  width: 30px;
+}
+
+img.team.img-circle {
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+img.team.img-circle:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+}
+
+#header, #footer {
+  background-color: #000;
+  border: transparent;
+  margin-bottom: 0;
+}
+
+#footer > .container .navbar-text {
+  float: none;
+}
+
+#social {
+  height: 100%;
+  vertical-align: middle;
+}
+
+#social:hover > .hiding {
+  opacity: 1;
+  visibility: visible;
+}
+
+#social > .hiding {
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  transition: all .5s linear;
+}
+
+#touch {
+  font-weight: 400;
+  border: thin solid white;
+  border-radius: 2em;
+  padding: .5em 1em;
+  transition: all .3s linear;
+}
+
+#touch:hover {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+#touch:hover > a {
+  color: #000;
+  text-decoration: none;
+}
+
+#service-info {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10vh;
+}
+
+#service-info > .mid-right {
+  width: 500px;
+  transform: translateY(5%);
+}
+
+#hovercard {
+  width: 200px;
+  position: absolute;
+  padding: 1em;
+  z-index: 99;
+}
+
+#founders {
+  min-height: 70vh;
+  margin: 5vh auto;
+  z-index: 0;
+}
+
+.white {
+  color: #fff;
+
+}
+
+.niki_blue {
+  color: #0096FF;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.down {
+  position: absolute;
+  top: 80vh;
+  left: 0vh;
+  width: 100%;
+  font-size: 70%;
+}
+
+.bounce {
+  background: url("https://static.niki.ai/img/scroll.svg") center no-repeat;
+  background-size: contain;
+  padding: 1em;
+  animation: 750ms linear 1s infinite backwards bouncy;
+}
+
+.chat-box {
+  width: 300px;
+  height: 300px;
+  font-size: .8em;
+  display: block;
+  margin-left: -18%;
+}
+
+.chat-bubble {
+  padding: 10px 15px;
+  margin: 1.2em 0 .1em;
+  border-radius: 2em;
+  max-width: 240px;
+}
+
+.chat-client {
+  border-bottom-right-radius: 0em;
+  background-color: #0096FF;
+  color: #E2E2E2;
+  font-weight: 400;
+}
+
+.chat-niki {
+  border-bottom-left-radius: 0em;
+  background-color: #E2E2E2;
+  color: #2D2D2D;
+}
+
+.middle {
+  position: relative;
+  top: 30vh;
+  margin: 11% 18%;
+  transform: translateY(-40%);
+}
+.demo-login-btn:hover,.demo-login-btn:focus,.demo-login-btn:active{
+
+	transform: scale(1.05);
+	color: #ffffff;
+	box-shadow: none !important;
+}
+.heading > h1 {
+    text-transform:uppercase;
+    font-weight: 200;
+}
+.app-color{
+color:#079c9c !important
+}
+.app-bg-color{
+background:#079c9c !important;
+color:white
+}
+
+
+.heading > h2 {
+    letter-spacing: 5px;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+
+.btn-sdk{
+  background-color:#0096ff;
+  font-weight:400;
+  font-size: 12px;
+  width:140px;
+  height:30px;
+  border:1px solid #0096ff;
+  border-radius:3px;
+}
+#order{
+  max-width: 420px;
+  text-transform:uppercase;
+  font-size: 20px;
+}
+@media only screen and (max-width: 800px){
+  #order{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 455px){
+  .btn-sdk{
+    margin-right:38px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .btn-sdk{
+    transform: translateY(-6px);
+  }
+}
+
+@media (min-width: 800px) {
+  .heading > h1 {
+    font-size: 4em;
+  }
+  .heading > h2 {
+    font-size: 40px;
+    margin-top: -.2em;
+  }
+}
+
+.container-fluid > hr {
+  margin: 0;
+  position: relative;
+  bottom: .2em;
+  width: 3%;
+}
+
+.container-fluid > hr:first-child, .container-fluid > hr:last-child  {
+  width: 10%;
+}
+
+.container-fluid > hr:last-child {
+  margin-right: -15%;
+}
+
+.container-fluid > hr:first-child {
+  margin-left: -15%;
+}
+
+.bubble {
+  padding: 1em;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.bubble::after {
+  content:'';
+  position: absolute;
+  background: url("https://static.niki.ai/img/bubble.svg") center no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bubble:hover {
+  transform: scale(2);
+  margin: 0 30px;
+}
+
+.bubble:hover::after {
+  transform: rotate(-90deg);
+}
+
+.services {
+  margin-top: 55vh;
+  margin-bottom: 25vh;
+}
+
+.tint-band {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 30vh;
+  padding: 5vh;
+  padding-bottom: 5vh;
+  margin: 5vh 0;
+}
+
+.thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
+.founder {
+  transition: all .5s linear;
+}
+
+.filter {
+  -webkit-filter: opacity(.1);
+  -moz-filter: opacity(.1);
+  -ms-filter: opacity(.1);
+  -o-filter: opacity(.1);
+  filter: opacity(.1);
+  z-index: -1;
+}
+
+.line {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: thin white solid;
+  animation: 2s linear 0s 1 forwards paused expand-line-full;
+}
+
+.line.first, .line.last {
+  animation: 1s linear 0s 1 forwards expand-line-half;
+}
+
+.line.first {
+  top: auto;
+}
+
+.line.last {
+  animation-play-state: paused;
+}
+
+.year {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #0096FF;
+  height: 10vh;
+  width: 10vh;
+  font: bold 2vh/10vh 'Raleway' !important;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .year {
+    height: 19.5vh;
+    width: 19.5vh;
+    font: bold 3vh/19.5vh 'Raleway' !important;
+  }
+}
+
+@keyframes expand-line-full {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes expand-line-half {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 50%;
+  }
+}
+
+@keyframes bouncy {
+  0%, 100% {
+    transform: translateY(-25%);
+  }
+  25% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+}
+
+
+.chat-box>div {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.middle .row{
+    border-bottom: none;
+}
+.shop-on{
+    margin-top: 0;
+    padding-bottom:0
+}

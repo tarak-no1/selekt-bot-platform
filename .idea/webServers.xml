@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ce2cf403-16b0-4c6c-b86f-ebfd7aebddb1" name="selekt-bot-platform" url="http://selekt.in">
+        <fileTransfer host="selekt.in" port="22" privateKey="D:\All Files\tarakesh.pem" rootFolder="/home/ubuntu/selekt-bot-platform/" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

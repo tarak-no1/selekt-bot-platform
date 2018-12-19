@@ -1,0 +1,106 @@
+<div ng-if='update_response.status==false'>
+	<div>{{showAlert(update_response.message)}}</div>
+</div>
+<div class="content-fluid">
+	<div class="col-md-12">
+		<div class="row">
+		    <div class="col-md-12">
+		        <div style="margin-bottom: 10px">
+		            <form role="form" ng-submit='submit()'>
+		                <div class="input-group input-group-lg">
+		                    <div class="input-group-btn">
+		                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{product_line}}
+		                        &nbsp;&nbsp;<span class="fa fa-caret-down"></span></button>
+		                      <ul class="dropdown-menu">
+		                        <li ng-repeat='pl in product_lines' ng-click='changeProductLine(pl)'><a href="#">{{pl}}</a></li>
+		                      </ul>
+		                    </div>
+		                    <!-- /btn-group -->
+		                    <input type="text" class="form-control" ng-model='image_url' placeholder="Tag by Image URL or image upload" name="image_url" style="margin-left: 5px;">
+		                    <label class="input-group-addon btn-primary" for='file-input'><i class="fa fa-upload"></i></label><input id='file-input' type="file" name="file" onchange="angular.element(this).scope().uploadFile(this.files)" style="display: none;" />
+		                </div>
+		                <div class="text-right" style="margin-top: 2px;"><input type="submit" name="submit" class="btn btn-primary"></div>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+		<div class="row">
+            <div style="overflow-x:auto; display: flex;">
+                  <a ng-repeat='img_url in image_links' ><img src='{{img_url}}' alt="..." ng-click='getSelectedImage(img_url)' style="height : auto !important;height: 50%;width: 40%;"></a>
+            </div>
+		</div>
+		<div class="row">
+		    <div class="col-md-12">
+		        <div class="box">
+		            <div class="box-header-with-border">
+		                <h4 class="box-title">Tagging Results</h4>
+		            </div>
+		            <div class="box-body" ng-repeat="(image_link, image_data) in image_info">
+		                <div class="col-md-12">
+		                    <!-- Result Image -->
+		                    <div class="col-md-4">
+		                        <div class="box">
+		                            <!--<div id='crop_image' style="width:{{image_data['colour']['crop_cordinates']['width']}}px;height:{{image_data['colour']['crop_cordinates']['height']}}px; margin-left:{{image_data['colour']['crop_cordinates']['x_axis']}}px;margin-top:{{image_data['colour']['crop_cordinates']['y_axis']}}px;position:absolute;border: 5px solid orange;"></div>-->
+		                            <center><img alt="" src="{{image_link}}" style="height : auto !important;height: 50%;width: 100%;"></center>
+		                        </div>
+		                    </div>
+
+		                      <!-- Result Detail -->
+		                      <div class="col-md-8">
+		                          <div class="box">
+		                                <div class="box-header">
+		                                    <h3>Attributes
+		                                    <small><p class="text">Powered by <span>Selekt</span></p></small></h3>
+		                                    <hr/>
+		                                </div>
+		                                <!-- Fashion Attributes -->
+		                                <div class="box-body">
+		                                    <table class="table table-condensed">
+		                                        <thead>
+		                                            <tr>
+		                                                <td>Attribute</td>
+		                                                <td>Value</td>
+		                                                <td>Confidence</td>
+		                                            </tr>
+		                                        </thead>
+		                                        <tbody>
+		                                            <tr ng-repeat='(attribute, att_data) in image_data'>
+		                                                <td>{{attribute}}</td>
+		                                                <td ng-if='attribute!="colour"'>{{att_data.attribute_value}}</td>
+		                                                <td ng-if='attribute!="colour"'>{{att_data.pred_probability}}</td>
+
+		                                                <td ng-if='attribute=="colour"'>
+		                                                	<div ng-repeat='att_value_data in att_data.attribute_value'>
+		                                                		<label class="col-md-4">{{att_value_data.colour}} </label>
+		                                                		<label class="col-md-4" style="background-color: {{att_value_data.hexa_code}};width: 20px;height: 20px;"></label>
+		                                                	</div>
+		                                                </td>
+		                                                <td ng-if='attribute=="colour"'></td>
+		                                            </tr>
+		                                        </tbody>
+		                                    </table>
+		                                </div>
+		                          </div>
+		                      </div>
+		                    <!---->
+		                  </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!--<div class="row">
+		    <div class="box">
+		        <form role="form">
+		            <center>
+		            	<div class="alert alert-danger" ng-if="update_response.status==false">
+							<strong>Error!</strong> {{update_response.message}}
+						</div>
+		                <label class="btn btn-default">
+		                    <input type="file" name="file" onchange="angular.element(this).scope().uploadFile(this.files)" class="btn btn-group" />
+		                </label>
+		            </center>
+		        </form>
+		    </div>
+		</div>-->
+	</div>
+</div>

@@ -1,0 +1,243 @@
+=========================================
+login api
+post: /bots/login
+request Format :
+{
+	email : "",
+	password : ""
+}
+
+response Format : 
+{
+	status : boolean value,
+	message : "",
+	client_data : {
+		client_id : "",
+		email : "",
+		company_name : "",
+		created_on : ""
+	}
+}
+==========================================
+signup api
+post : /bots/signup
+request format : 
+{
+	username : "",
+	company_name : "",
+	password : ""
+}
+
+response format : 
+{
+	status : boolean value,
+	message  : "",
+	client_data : {
+		client_id : "",
+		email : "",
+		company_name : "",
+		created_on : ""
+	}
+}
+==========================================
+display bots api
+post : bots/get-all-bots
+request format : 
+{
+	client_id : ""
+}
+
+response format : 
+[
+	{
+		bot_id : "",
+        bot_name : "",
+        bot_type : "",
+        page_identifier : "",
+        created_on : "",
+        status : "",
+        launch_time : "",
+        linked_page_name : ""
+	},
+	{
+		bot_id : "",
+        bot_name : "",
+        bot_type : "",
+        page_identifier : "",
+        created_on : "",
+        status : "",
+        launch_time : "",
+        linked_page_name : ""
+	}
+]
+==========================================
+bot creation api
+post: /bots/create-bot 
+request format : 
+{
+	client_id : "",
+	bot_type : "",
+	country : "",
+	fb_access_token : "",
+	page_identifier : ""
+}
+response format : 
+{
+	status : boolean value
+}
+==========================================
+bot delete api
+post: /bots/delete-bot 
+request format : 
+{
+	client_id : "",
+	bot_type : ""
+}
+response format : 
+{
+	status : boolean value
+}
+==========================================
+
+inventory update api
+post : /bots/update-inventory
+request format : 
+{
+	client_id : "",
+	inventory_file : 
+}
+response format : 
+{
+	status : boolean value
+}
+=========================================
+forgot password api
+post : /bots/forgot-password
+request format : 
+{
+	email : ""
+}
+response
+{
+	message : "Check your mail for further details"
+}
+=========================================
+client fb page details
+post : /bots/create-client-fb-details
+request format : 
+{
+	"client_id" : "",
+	"username" : "",
+	"fb_id" : "",
+	"email" : "",
+	"fb_pages" :
+	[
+		{
+			"page_name" : "page-1",
+			"access_token" : "",
+			"page_identifier" : "",
+			"page_image_url" : ""
+		},
+		{
+			"page_name" : "page-2",
+			"access_token" : "",
+			"page_identifier" : "",
+			"page_image_url" : ""
+		}
+	]
+}
+
+response format : 
+{
+	"status" : true
+}
+===============================================
+
+get all fb pages
+post : /bots/get-fb-pages
+request format : 
+{
+	client_id : ""
+}
+response format : 
+{
+	status : boolean
+	username : string,
+	profile_image : string,
+	fb_pages : 
+	[
+		{
+			"page_name" : string,
+			"access_token" : string,
+			"page_identifier" : string,
+			"page_image_url" : string,
+			"is_already_connected" : boolean
+		},
+		{
+			"page_name" : "page-2",
+			"access_token" : "",
+			"page_identifier" : "",
+			"page_image_url" : "",
+			"is_already_connected" : true
+		}
+	]
+}
+==============================================
+client facebook logout
+post : /bots/fb-logout
+request format : 
+{
+	client_id : ""
+}
+response format : 
+{
+	status : boolean
+}
+===============================================
+update bot details
+post : /bots/update-bot
+request format : 
+{
+	client_id : "",
+	bot_id : "",
+	fb_access_token : "",
+	page_identifier : "",
+	change_bot_status : true or false
+}
+respone format
+{
+	status : true
+}
+================================================
+disconnect facebook page
+post : /bots/disconnect-fb-page
+request format : 
+{
+	fb_access_token : "",
+	page_identifier : ""
+}
+response format : 
+{
+	status : boolean
+	message : ""
+}
+
+================================================
+get bot details
+post : /bots/get-bot-details
+request format : 
+{
+	client_id : "",
+	bot_id : ""
+}
+response format : 
+{
+	fb_access_token : "",
+	page_identifier : "",
+	bot_type : "",
+	bot_name : "",
+	timestamp : "",
+	country : "",
+	inventory_status : "",
+	launch_time : ""
+}

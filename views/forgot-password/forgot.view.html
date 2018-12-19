@@ -1,0 +1,43 @@
+<!--forgot password view-->
+<div class="flex-grow flex flex-column">
+    <div class="Forgot py3 mb4">
+        <div class="auth-form p3 mx-auto">
+            <div class="Forgot--Header mb3"><!--<img
+                    src="app-images/logo.png" class="Login&#45;&#45;Logo mx-auto"
+                    alt="Selekt logo">-->
+                <h1 class="title--secondary center">Forgot password</h1></div>
+            <form name="form" role="form">
+                <div class="InputGroup mb2 form-group"
+                     ng-class="{ 'has-error' : form.email.$dirty && form.email.$error.required }">
+                    <div class="w100 flex flex-stretch flex-content-between"><label
+                            class="label left-align">Email
+                        address</label><span
+                            class="c-red-900 s-text right-align"></span></div>
+                    <div class="Input"><input type="email" required name="email" value=""
+                                              ng-class="{highlight: !form.email.$valid && form.email.$touched}"
+                                              ng-model="vm.email"
+                                              ng-change="!error"
+                                              class="rc-field icon"/><i ng-show="!form.email.$valid && form.email.$touched" class=" error_icon fa fa-times-circle" aria-hidden="true"></i>
+                        <i ng-show="form.email.$valid && form.email.$touched" class=" success_icon fa fa-check-circle " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right-align form-actions" ng-click="vm.forgotPass()">
+                    <div tabindex="0" class="btn btn-action success">
+                        <button type="submit"></button>
+                        <div class="btn--content">Submit</div>
+                    </div>
+                </div>
+                <div class="center">
+                    <img ng-show="progress" src="/chatbot-solution/app-images/gif/in_progress.gif" class="progress-status"/>
+                    <span class="no-success" ng-show="error">{{errorMessage}}</span>
+                    <span class="success-msg text-center" ng-show="success">{{successMessage}}</span>
+                </div>
+            </form>
+        </div>
+        <div class="center">
+            <p class="mb2 mt2">or</p>
+            <p class="m-text bold"><!-- react-text: 137 -->Don't have an account?
+                <!-- /react-text --><!-- react-text: 138 --> <!-- /react-text --><a
+                        href="/chatbot-solution/signup?ref=from-login">Sign up</a></p></div>
+    </div>
+</div>

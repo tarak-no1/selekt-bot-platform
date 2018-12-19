@@ -1,0 +1,56 @@
+// getting foreign keys
+SELECT 
+  TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  REFERENCED_TABLE_SCHEMA = 'bot_platform' AND
+  REFERENCED_TABLE_NAME = 'client_fb_login_details';
+
+
+//adding triggers
+DELIMITER $$
+CREATE TRIGGER `update_page_exists_status` AFTER
+INSERT ON `bot_details` FOR EACH ROW
+BEGIN UPDATE `client_fb_pages` SET is_already_connected = 1 WHERE
+page_identifier=NEW.page_identifier;  
+END$$
+DELIMITER ;
+
+//adding triggers
+DELIMITER $$
+CREATE TRIGGER `update_page_connection_status` AFTER
+UPDATE ON `bot_details` FOR EACH ROW
+BEGIN UPDATE `client_fb_pages` SET is_already_connected = 0 WHERE
+page_identifier not in (SELECT `page_identifier` FROM `bot_details` WHERE page_identifier=NEW.page_identifier);
+UPDATE `client_fb_pages` SET is_already_connected = 1 WHERE
+page_identifier in (SELECT `page_identifier` FROM `bot_details` WHERE page_identifier=NEW.page_identifier);  
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `after_delete_update_page_connection_status` AFTER
+DELETE ON `bot_details` FOR EACH ROW
+BEGIN UPDATE `client_fb_pages` SET is_already_connected = 0 WHERE
+page_identifier not in (SELECT `page_identifier` FROM `bot_details`);
+UPDATE `client_fb_pages` SET is_already_connected = 1 WHERE
+page_identifier in (SELECT `page_identifier` FROM `bot_details`);  
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `update_access_token` AFTER
+UPDATE ON `client_fb_pages` FOR EACH ROW
+BEGIN UPDATE `bot_details` SET fb_access_token = NEW.access_token WHERE
+page_identifier=NEW.page_identifier and client_identifier in (SELECT client_identifier from client_fb_login_details where id = NEW.fb_user_identifier);
+END$$
+DELIMITER ;
+
+select client_fb_login_details.id, client_fb_login_details.username, client_fb_login_details.profile_image, bot_details.bot_type from client_fb_login_details left join bot_details on client_fb_login_details.client_identifier = bot_details.client_identifier where client_fb_login_details.client_identifier=10 and client_fb_login_details.login_status=1 order by client_fb_login_details.timestamp desc;
+
+
+
+select client_fb_pages.page_name, client_fb_pages.access_token,client_fb_pages.page_identifier,client_fb_pages.image_url,client_fb_pages.is_already_connected, bot_details.bot_type from client_fb_pages left join bot_details on client_fb_pages.page_identifier = bot_details.page_identifier where client_fb_pages.fb_user_identifier='6';
+
+
+select client_fb_pages.page_name, client_fb_pages.access_token,client_fb_pages.page_identifier,client_fb_pages.image_url,client_fb_pages.is_already_connected, bot_details.bot_type, bot_details.id from client_fb_pages left join bot_details on client_fb_pages.page_identifier = bot_details.page_identifier;

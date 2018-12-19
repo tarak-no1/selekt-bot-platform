@@ -1,0 +1,67 @@
+<div class="mt4 setup_page1">
+    <!--3rd setup page of bot creation-->
+    <div class="container" >
+        <div class="row">
+            <div >
+                Update Inventory File
+
+
+                <input  class="pull-right" type="file" accept="*" file-model="myFile"/>
+            </div>
+        </div>
+        <div class="row">
+            Do you have in deals/offers mentioned in uploaded file
+
+            <span class="px1">/</span>
+            <div class=" button custom-select" style="display: inline-block;border:1px solid #bdbdbd9e;">
+                <select style=" padding:5px" ng-model="deals_status" ng-options="x for x in [true,false]" title="productLine" ng-change="getAttributesFromLink(productLineSelected)" class="ng-pristine ng-valid ng-empty ng-touched">
+                    <option value="" class="" ng-disabled="1">Choose</option>
+                </select>
+            </div>
+            <div class="connect-to" >
+                                                <button class="bold" style="border-radius: 10px;
+    border: 1px solid lavender;
+    padding: 8px 11px;
+    margin-top: 20px;" ng-click="">
+                                                    <a href="/chatbot-solution/update-inventory/test_sample.xml" download target="_blank">Recommended sample format 1</a>
+                                                </button>
+
+                                            </div>
+            <div class="connect-to" >
+                                                <button class="bold" style="border-radius: 10px;
+    border: 1px solid lavender;
+    padding: 8px 11px;
+    margin-top: 20px;" ng-click="">
+                                                    <a href="/chatbot-solution/update-inventory/sample_data.json" download target="_blank">Recommended sample format 2</a>
+                                                </button>
+
+                                            </div>
+        </div>
+        <div class="row">
+            <div class="InputGroup mt3" style="display:flex">
+                <label class="label">
+                    Contact number for any communication
+
+                    <span class="optional">(optional)</span>
+                </label>
+                <div class="Input">
+                    <input style="width: 140%;" type="number" value="" ng-model="contact_number" class="rc-field" autocomplete="" placeholder="Enter your mobile number here">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display:flex">
+            <div ng-click="uploadFile();upload_started=1"
+                 ng-class="(deals_status!=null && myFile!= null)?'':'isDisabled'"
+                 tabindex="0" class="btn btn-primary app-bg-color mt3">
+                <div class="btn--content">
+                    </span> Submit
+                </div>
+                <div id="snackbar">You will now be redirected to Dashboard</div>
+            </div>
+            <div ng-show="upload_started" style="display: flex; padding-top: 25px; padding-left: 20px;">
+                <div class='progress-bar'><div class='progress-bar-bar' ng-style="{width: currentProgress }"></div></div>
+                <span class="h6 italic" style="margin-left:5px">(do not refresh or go back till file uploads completely)</span>
+            </div>
+        </div>
+    </div>
+</div>

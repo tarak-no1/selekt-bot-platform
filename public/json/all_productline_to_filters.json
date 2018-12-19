@@ -1,0 +1,1310 @@
+{
+  "women_tops": [
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "surface_styling",
+      "display_name": "surface styling"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "tops_length",
+      "display_name": "tops length"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "knit_or_woven",
+      "display_name": "knit or woven"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "pattern type"
+    },
+    {
+      "attribute": "sleeve_type",
+      "display_name": "sleeve type"
+    },
+    {
+      "attribute": "tops_type",
+      "display_name": "tops type"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    }
+  ],
+  "women_dresses": [
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "dress_shape",
+      "display_name": "dress shape"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "knit_or_woven",
+      "display_name": "knit or woven"
+    },
+    {
+      "attribute": "surface_styling",
+      "display_name": "surface styling"
+    },
+    {
+      "attribute": "transparency",
+      "display_name": "transparency"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "fabric_type",
+      "display_name": "fabric type"
+    },
+    {
+      "attribute": "lining",
+      "display_name": "lining"
+    },
+    {
+      "attribute": "sleeve_type",
+      "display_name": "sleeve type"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "dress_length",
+      "display_name": "dress length"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "pattern type"
+    }
+  ],
+  "women_kurta": [
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "slit_detail",
+      "display_name": "slit detail"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "base_design",
+      "display_name": "base design"
+    },
+    {
+      "attribute": "fabric_purity",
+      "display_name": "fabric purity"
+    },
+    {
+      "attribute": "ornamentation_type",
+      "display_name": "ornamentation type"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "design_styling",
+      "display_name": "design styling"
+    },
+    {
+      "attribute": "pattern_coverage",
+      "display_name": "pattern coverage"
+    },
+    {
+      "attribute": "weave_type",
+      "display_name": "weave type"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "kurta_shape",
+      "display_name": "kurta shape"
+    },
+    {
+      "attribute": "kurta_length",
+      "display_name": "kurta length"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "technique",
+      "display_name": "technique"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "sleeve_type",
+      "display_name": "sleeve type"
+    },
+    {
+      "attribute": "weave_pattern",
+      "display_name": "weave pattern"
+    }
+  ],
+  "women_jeans": [
+    {
+      "attribute": "distress_or_torn",
+      "display_name": "distress or torn"
+    },
+    {
+      "attribute": "waistband",
+      "display_name": "waistband"
+    },
+    {
+      "attribute": "denim_shade",
+      "display_name": "denim shade"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "feature",
+      "display_name": "feature"
+    },
+    {
+      "attribute": "waist_rise",
+      "display_name": "waist rise"
+    },
+    {
+      "attribute": "denim_fade",
+      "display_name": "denim fade"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "reversible",
+      "display_name": "reversible"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "stretch",
+      "display_name": "stretch"
+    },
+    {
+      "attribute": "jeans_length",
+      "display_name": "jean length"
+    },
+    {
+      "attribute": "pockets",
+      "display_name": "pockets"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "type_of_distress",
+      "display_name": "type of distress"
+    }
+  ],
+  "women_tshirts": [
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "print_coverage",
+      "display_name": "print coverage"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "tshirt_type",
+      "display_name": "tshirt type"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "surface_styling",
+      "display_name": "surface styling"
+    }
+  ],
+  "women_jackets": [
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "feature",
+      "display_name": "feature"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "jacket_type",
+      "display_name": "jacket type"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "ornamentation",
+      "display_name": "ornamentation"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "hood",
+      "display_name": "hood"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "jacket_length",
+      "display_name": "jacket length"
+    },
+    {
+      "attribute": "lining_material",
+      "display_name": "lining material"
+    }
+  ],
+  "women_heels": [
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "heel_height",
+      "display_name": "heel height"
+    },
+    {
+      "attribute": "surface_ornamentation",
+      "display_name": "surface ornamentation"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "shoe_type",
+      "display_name": "shoe type"
+    },
+    {
+      "attribute": "heel_type",
+      "display_name": "heel type"
+    },
+    {
+      "attribute": "toe_shape",
+      "display_name": "toe shape"
+    },
+    {
+      "attribute": "fastening_and_back_detail",
+      "display_name": "fastening & back detail"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "ankle_height",
+      "display_name": "ankle height"
+    },
+    {
+      "attribute": "upper_material",
+      "display_name": "upper material"
+    }
+  ],
+  "women_handbags": [
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "bag_type",
+      "display_name": "bag type"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "material",
+      "display_name": "material"
+    },
+    {
+      "attribute": "number_of_main_compartments",
+      "display_name": "main compartments"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "bag_Size",
+      "display_name": "bag Size"
+    },
+    {
+      "attribute": "compartment_closure",
+      "display_name": "compartment closure"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "pattern type"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    }
+  ],
+  "women_flats": [
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "shoe_type",
+      "display_name": "shoe type"
+    },
+    {
+      "attribute": "upper_material",
+      "display_name": "upper material"
+    },
+    {
+      "attribute": "toe_shape",
+      "display_name": "toe shape"
+    },
+    {
+      "attribute": "fastening_and_back_detail",
+      "display_name": "fastening & back detail"
+    },
+    {
+      "attribute": "ankle_height",
+      "display_name": "ankle height"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "surface_ornamentation",
+      "display_name": "surface ornamentation"
+    }
+  ],
+  "women_casual_shoes": [
+    {
+      "attribute": "toe_shape",
+      "display_name": "toe shape"
+    },
+    {
+      "attribute": "ankle_height",
+      "display_name": "ankle height"
+    },
+    {
+      "attribute": "insole",
+      "display_name": "insole"
+    },
+    {
+      "attribute": "sole_material",
+      "display_name": "sole material"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "upper_material",
+      "display_name": "upper material"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "shoe_type",
+      "display_name": "shoe type"
+    },
+    {
+      "attribute": "surface_ornamentation",
+      "display_name": "surface ornamentation"
+    },
+    {
+      "attribute": "fastening",
+      "display_name": "fastening"
+    },
+    {
+      "attribute": "technology",
+      "display_name": "technology"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "shoe_width",
+      "display_name": "shoe width"
+    }
+  ],
+  "women_trousers": [
+    {
+      "attribute": "weave_type",
+      "display_name": "weave type"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "trousers_type",
+      "display_name": "trousers type"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "pattern type"
+    },
+    {
+      "attribute": "waist_rise",
+      "display_name": "waist rise"
+    },
+    {
+      "attribute": "feature",
+      "display_name": "feature"
+    }
+  ],
+  "women_sweatshirts": [
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "print_and_pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "sweatshirts_type",
+      "display_name": "sweatshirts type"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "hood",
+      "display_name": "hood"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    }
+  ],
+  "women_shirts": [
+    {
+      "attribute": "shirts_collar",
+      "display_name": "shirts collar"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "pattern_type",
+      "display_name": "pattern type"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "weave_pattern",
+      "display_name": "weave pattern"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "pattern_size",
+      "display_name": "pattern size"
+    },
+    {
+      "attribute": "transparency",
+      "display_name": "transparency"
+    },
+    {
+      "attribute": "sleeve_type",
+      "display_name": "sleeve type"
+    },
+    {
+      "attribute": "shirt_length",
+      "display_name": "shirt length"
+    },
+    {
+      "attribute": "surface_styling_or_features",
+      "display_name": "surface styling"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    }
+  ],
+  "women_shorts": [
+    {
+      "attribute": "print_pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "knit_or_woven",
+      "display_name": "knit or woven"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "surface_styling_or_features",
+      "display_name": "surface styling"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "waist_rise",
+      "display_name": "waist rise"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "shorts_type",
+      "display_name": "shorts type"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    }
+  ],
+  "women_skirts": [
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "knit_or_woven",
+      "display_name": "knit or woven"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "skirt_shape",
+      "display_name": "skirt shape"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "surface_styling_or_features",
+      "display_name": "surface styling"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "print_or_pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    }
+  ],
+  "women_sweaters": [
+    {
+      "attribute": "sweaters_type",
+      "display_name": "sweaters type"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "print_and_pattern_type",
+      "display_name": "print & pattern type"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "hemline",
+      "display_name": "hemline"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    }
+  ],
+  "women_capris": [
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "waist_rise",
+      "display_name": "waist rise"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    }
+  ],
+  "women_blazers": [
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "blazers_type",
+      "display_name": "blazers type"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    },
+    {
+      "attribute": "lining_material",
+      "display_name": "lining material"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "sleeve_type",
+      "display_name": "sleeve type"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "length",
+      "display_name": "length"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    }
+  ],
+  "women_jeggings": [
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "closure",
+      "display_name": "closure"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "fit",
+      "display_name": "fit"
+    }
+  ],
+  "women_jumpsuits": [
+    {
+      "attribute": "brand",
+      "display_name": "brand"
+    },
+    {
+      "attribute": "website",
+      "display_name": "website"
+    },
+    {
+      "attribute": "pattern",
+      "display_name": "pattern"
+    },
+    {
+      "attribute": "trouser_fit",
+      "display_name": "trouser fit"
+    },
+    {
+      "attribute": "all_size",
+      "display_name": "size"
+    },
+    {
+      "attribute": "colour",
+      "display_name": "colour"
+    },
+    {
+      "attribute": "discount_price",
+      "display_name": "price"
+    },
+    {
+      "attribute": "neck",
+      "display_name": "neck"
+    },
+    {
+      "attribute": "discount_percent",
+      "display_name": "offers & discounts"
+    },
+    {
+      "attribute": "fabric",
+      "display_name": "fabric"
+    },
+    {
+      "attribute": "sleeve",
+      "display_name": "sleeve"
+    }
+  ]
+}

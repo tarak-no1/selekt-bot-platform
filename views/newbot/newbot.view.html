@@ -1,0 +1,488 @@
+<form class="BotCreate container py4" ng-init="setup_page = 1">
+
+
+    <div class="create-stages">
+        <!--stages of creating bot -->
+        <h2 class="flex subtitle " ng-class="setup_page >= 1?'active_setup_page':''">
+		<span
+                class="BotCreate--steps app-bg-color">1</span>Create your bot
+        </h2>
+        <h2 class="flex subtitle app-color" ng-class="setup_page >= 2?'active_setup_page':''">
+		<span
+                class="BotCreate--steps ">2</span>Link your Facebook
+        </h2>
+        <h2 class="flex subtitle app-color" ng-class="setup_page >= 3?'active_setup_page':''">
+		<span
+                class="BotCreate--steps ">3</span>Upload Inventory
+        </h2>
+    </div>
+
+    <div class="mt4" ng-show="setup_page == 1">
+        <!--first setup page of bot creation-->
+        <div class="setup_page1">
+            <div class="flex flex-center mt3">
+                <div class="Breadcrumb">
+                    <div class="flex ellipsis">
+                        <a title="saemahesh" class="link ellipsis" href="/dashboard">{{company_name}}</a>
+                    </div>
+                </div>
+                <span class="px1">/</span>
+                <div class=" button custom-select" style="display: inline-block;border:1px solid #bdbdbd9e;">
+                    <select style=" padding:5px" ng-model="bot_name_selected" ng-options="x for x in ['fashion']"
+                            title="productLine" class="ng-pristine ng-valid ng-empty ng-touched">
+                        <option value="" class="" ng-disabled="1"> Choose bot type</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex flex-center mt3">
+                <div class="Breadcrumb">
+                    <div class="flex ellipsis">
+                        <span title="saemahesh">Country</span>
+                    </div>
+                </div>
+                <span class="px1">/</span>
+                <div class=" button custom-select" style="display: inline-block;border:1px solid #bdbdbd9e;">
+                    <select style=" padding:5px" ng-model="country_selected" ng-options="x for x in ['India','Other']"
+                            title="productLine" ng-change="getAttributesFromLink(productLineSelected)"
+                            class="ng-pristine ng-valid ng-empty ng-touched">
+                        <option value="" class="" ng-disabled="1"> Choose Country</option>
+                    </select>
+                </div>
+                <div class="italic h6"> &nbsp&nbsp(Country where the bot is deployed)</div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="setup_page == 2" class="mt4 panel panel-default">
+        <!--2nd setup page of bot creation-->
+        <div data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-heading"
+             aria-expanded="true">
+            <h4 class="panel-title" style="text-transform: none;">
+                <img src="/chatbot-solution/app-images/ico_messenger.png"
+                     class="img1" style="display: inline;">Facebook Messenger
+
+                <img
+                        src="/chatbot-solution/app-images/ico_green_tick.png" class="img" ng-show="is_facebook_configured"
+                        style="height:25px">
+            </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse in" aria-expanded="true" style="">
+            <div class="panel-body" style="display:none;">
+                <div class="row">
+                    <p>Refer to this
+                        <a target="_blank" href="https://engati.com/mktg/engati-messenger.pdf">guide</a> to
+                        connect your Facebook Page with the bot. Use the values below for Callback URL and verify token.
+
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h5>Callback URL:&nbsp;
+                            <b class="ng-binding">https://app.engati.com/d1/webhooks/2a78bcdc400d4ddf/</b>
+                        </h5>
+                        <br>
+                        <h5>Verify Token:&nbsp;
+                            <b class="ng-binding">3128476B3B</b>
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                        <h5>Page Access Token&nbsp;&nbsp;</h5>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <input type="text" ng-model="page_access_token" style="width: 100%;"
+                               class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                    </div>
+                </div>
+                <div class="row">
+                    <button style="text-align:center;" class="btn-send" ng-click="saveFBPageAccessToken()">Save</button>
+                </div>
+            </div>
+            <div class="panel-body fb-sign-in-panel" style="display: block;" ng-show="!loggedInWithFacebook">
+                <div class="row border-none">
+                    <center>
+                        <div class="fb-sign-in-connect-page fb-login-in col-md-6 col-md-offset-3">
+                            <!-- ngIf: !is_facebook_configured -->
+                            <!-- ngIf: is_facebook_configured -->
+                            <div class="fb-label ng-scope">
+                                You already have bot configured for this account. Login to see.
+                            </div>
+                            <!-- end ngIf: is_facebook_configured -->
+                            <a ng-click="login()" class="btn fb-sign-in-connect-page-btn app-bg-color">
+                                <i class="fa fa-facebook" style="padding-right: 5px"></i>
+                                Sign In With Facebook
+
+                            </a>
+                            <div class="popup-message">Please make sure popups are not blocked on the browser.</div>
+                            <div class="loader-spin" id="loader" style="display: none;"></div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="panel-body available-fb-pages-panel" style="display: block;" ng-show="loggedInWithFacebook">
+                <div class="row border-none" id="fbchannel">
+                    <div class="row border-none">
+                        <!-- ngIf: !page_connected -->
+                        <div class="col-md-4 col-md-offset-4 col-xs-6 available-fb-pages text-center ng-scope app-color"
+                             ng-if="!page_connected" style="">Available Facebook Pages
+                        </div>
+                        <!-- end ngIf: !page_connected -->
+                        <!-- ngIf: page_connected -->
+                        <div class="buttons-header ng-scope pull-left" ng-if="!vm.bot.status.page"
+                             ng-hide="vm.connecting"
+                            <a href="https://www.facebook.com/pages/create/" target="_blank"
+                               class="button button-ver2 white-rounded" ng-click="vm.setNeedRefresh()" style="
+                        padding: 10px;
+                    ">Create Facebook page</a>
+                        </div>
+                        <div class="col-md-1 col-xs-1 pull-right">
+                            <div class="row border-none log-out-fb-connect">
+                                <div class="col-md-4 " id="fb_account_name">
+                                    <img alt="image" class="img1" style="float:right;"
+                                         src="{{profilePic}}">
+                                </div>
+                            </div>
+                            <div class="row log-out-fb-connect border-none">
+                                <div class="col-md-2" id="fb_logout">
+                                    <a href="#" class="fill-div" ng-click="logout()"> Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fb-sign-in-connect-page" id="list_fb_pages" style="">
+                        <div class="panel panel-default" ng-repeat="pages in fb_pages">
+                            <div class="panel-heading collapsed" aria-expanded="false">
+                                <h4 class="panel-title" style="display: inline-flex;text-transform: none;">
+                                    <img
+                                            src="{{pages.page_image_url}}" class="img1">{{pages.page_name}}
+                                </h4>
+                                <button ng-show="fb_access_token!=pages.access_token && !pages.is_already_connected" class="btn connect-btn"
+                                        ng-click="connect(pages.access_token,pages.page_identifier)"
+                                        style="float: right;">Connect
+                                </button>
+                                <img style="height:25px" ng-show="fb_access_token==pages.access_token"
+                                     src="/chatbot-solution/app-images/tick.png"
+                                     alt="{{pages.page_name}}"/>
+                                     <button class="btn " ng-show="pages.is_already_connected" ng-disabled="pages.is_already_connected" style="float: right;">
+                                    Connected to 
+                                    <div style="display:flex">
+                                        <img src="https://dashboard.chatfuel.com/assets2/images/av_def_bot.png" alt="" style="height: 30px;
+    margin-top: -6px;
+    margin-left: 12px;">
+                                        <div ng-if="pages.client_id == globals.clientData.client_id" class="app-color" >
+                                            {{pages.connected_bot_type | uppercase}}
+                                        </div>
+                                        <div ng-if="pages.client_id != globals.clientData.client_id" >
+                                            Another
+                                        </div>
+                                        <button ng-show="pages.is_already_connected" style="    border: 1px solid red;"
+                                                ng-click="disconnectPage(pages.page_identifier,pages.access_token)" class="btn btn-danger">
+                                            Disconnect</button>
+
+                                    </div>
+
+                                     </button>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="Input">
+                            <input type="number"
+                                   ng-model="app_id" placeholder="Enter your App ID" 
+                                   class="rc-field"/>
+                        </div><br>
+
+                <div class="Input">
+                            <input type="text"
+                                   ng-model="app_secret" placeholder="Enter your App secret code"
+                                   class="rc-field"/>
+                        </div>
+                        <div class="btn btn-primary app-bg-color mt3" ng-disabled="!app_id || !app_secret" ng-click="connectPageToBot()">
+                            <div class="btn--content">Submit</div>
+                        </div>
+                </div>
+            </div>
+            <div class="BCStep w100 flex flex-column">
+                <div class="BCStep--Header flex flex-content-start flex-center py2">
+                    <h3 style="text-align:left" class="flex-grow px3 c-blue-500"
+                        ng-click="show_webhook = !show_webhook">
+                        Set the Facebook callback url
+
+                        <span class="glyphicon glyphicon-play h5" style="transform: rotate(90deg);"></span>
+                    </h3>
+                    <div class="hint--top" aria-label="Hide instructions">
+                        <i class="BCStep--Icon s-icon ion-android-arrow-dropup"></i>
+                    </div>
+                </div>
+                <div ng-show="show_webhook" class="BCContent w100 flex flex-column bg-grey-100 py2 px4">
+                    <div>
+											<span>
+												<p>Now go on the Messenger menu and click on the
+													<strong>Setup Webhook</strong> button.
+												</p>
+											</span>
+                    </div>
+                    <div>
+											<span>
+												<p>
+													<img src="https://cdn.recast.ai/man/recast-ai-messenger-9.png"
+                                                         alt="find facebook config webhook">
+													</p>
+												</span>
+                    </div>
+                    <div>
+												<span>
+													<p>Set the Callback Url and the Verify Token with the ones we provide.</p>
+												</span>
+                        <div class="Input">
+                            <input type="url"
+                                   name="webhook" value="http://selekt.in/chatbot-solution/webhook"
+                                   class="rc-field icon" disabled>
+                            <button ng-click="showClipboardMessage()" ngclipboard
+                                    data-clipboard-text="https://www.selekt.in/bots/webhook" id="callbackUrl"
+                                    style="background-color: #666666;">
+                                <i class="  clipboard_icon fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+													<span>
+														<p>Set the Callback Url and the Verify Token with the ones we provide.</p>
+													</span>
+                        <div class="Input">
+                            <input type="url"
+                                   name="webhook" value="just_do_it"
+                                   class="rc-field icon" disabled>
+                            <button ng-click="showClipboardMessage()" ngclipboard data-clipboard-text="just_do_it"
+                                    id="token" style="background-color: #666666;">
+                                <i class="  clipboard_icon fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+														<span>
+															<p>
+																<img src="https://cdn.recast.ai/man/recast-ai-messenger-2.png"
+                                                                     alt="find facebook config webhook">
+																</p>
+															</span>
+                    </div>
+                    <div id="snackbar">Copied to clipboard</div>
+                </div>
+            </div>
+            <center ng-show="is_facebook_configured" class="" style="">
+                <h4>Configure menu</h4>
+            </center>
+            <div class="row" style="border: none;" ng-show="is_facebook_configured">
+                <!-- fbmenu popup -->
+                <div class="fbmenupopup" style="height: 221px; display: none;">
+                    <center>
+                        <input type="text" ng-model="fbmenubutton.title" maxlength="30" placeholder="Button name"
+                               style="width:80%;margin-top: -12px"
+                               class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength">
+                    </center>
+                    <div class="row" ng-init="fbmenubutton.type='postback'" style="border:none">
+                        <div class="col-md-4 popupoptions popuptabs" ng-click="fbmenubutton.type='postback'"
+                             ng-class="{true:'popuptabs',false:''}[fbmenubutton.type == 'postback']">
+                            <center>Path Name</center>
+                        </div>
+                        <div class="col-md-4 popupoptions" ng-click="fbmenubutton.type='web_url'"
+                             ng-class="{true:'popuptabs',false:''}[fbmenubutton.type == 'web_url']">
+                            <center>Url</center>
+                        </div>
+                        <div class="col-md-4 popupoptions" ng-show="level!='level3'"
+                             ng-click="fbmenubutton.type='nested'"
+                             ng-class="{true:'popuptabs',false:''}[fbmenubutton.type == 'nested']">
+                            <center>Submenu</center>
+                        </div>
+                    </div>
+                    <center>
+                        <select ng-model="fbmenubutton.payload" ng-show="fbmenubutton.type=='postback'"
+                                style="width: 180px;height:43px" ng-change="changepostbackfbmenu(fbmenubutton.payload)"
+                                class="ng-pristine ng-untouched ng-valid ng-empty">
+                            <option value="? undefined:undefined ?"></option>
+                            <!-- ngRepeat: path in paths -->
+                            <option ng-selected="false" ng-repeat="path in paths" value="flow_welcome_2529"
+                                    class="ng-binding ng-scope" style="">
+                                Welcome new user
+                            </option>
+                            <!-- end ngRepeat: path in paths -->
+                            <option ng-selected="false" ng-repeat="path in paths" value="flow_greetings_2529"
+                                    class="ng-binding ng-scope">
+                                Greet returning user
+                            </option>
+                            <!-- end ngRepeat: path in paths -->
+                            <option ng-selected="false" ng-repeat="path in paths" value="flow_default_fallback_msg_2529"
+                                    class="ng-binding ng-scope">
+                                Default Message
+                            </option>
+                            <!-- end ngRepeat: path in paths -->
+                            <option value="addpath">+ Create Path</option>
+                        </select>
+                        <div ng-show="fbmenubutton.type=='web_url'" class="ng-hide">
+                            <input type="url" ng-model="fbmenubutton.url" placeholder="Enter Url" style="width:100%;"
+                                   class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-url">
+                            <span class="error ng-hide" ng-show="fbmenuform.input.$error.url">Not valid url!</span>
+                        </div>
+                        <div ng-show="fbmenubutton.type=='nested'" class="ng-hide">
+                            <p>You can create a submenu for this option.</p>
+                        </div>
+                    </center>
+                    <button class="btn modalbutton ng-hide" style="height: 34px!important;margin-top:10px;"
+                            ng-show="popuptype=='add'"
+                            ng-disabled="!fbmenubutton.payload &amp;&amp; fbmenubutton.type=='postback' || !fbmenubutton.url &amp;&amp;  fbmenubutton.type=='web_url' || !fbmenubutton.title"
+                            ng-click="addfbmenubutton(level)" disabled="disabled">Save
+                    </button>
+                    <button class="btn modalbutton ng-hide" style="height: 34px!important;margin-top:10px;"
+                            ng-show="popuptype=='update'"
+                            ng-disabled="!fbmenubutton.payload &amp;&amp; fbmenubutton.type=='postback' || !fbmenubutton.url &amp;&amp;  fbmenubutton.type=='web_url' || !fbmenubutton.title"
+                            ng-click="savemenubtns(level)" disabled="disabled">Save
+                    </button>
+                </div>
+                <!-- fbmenu popoup end -->
+                <br>
+                <div class="col-md-3 fbmenubox">
+                    <center>
+                        <h5 class="menuhead">Menu</h5>
+                    </center>
+                    <!-- ngRepeat: menubtn in fb_menu_payload[0].call_to_actions track by $index -->
+                    <div class="custom_carousel_buttonname fbmenuitem ng-scope ng-hide"
+                         ng-repeat="menubtn in fb_menu_payload[0].call_to_actions track by $index"
+                         ng-show="!menubtn.locked" style="">
+                        <button class="close nodedelete" ng-click="removemenupopup($index,'level1')"
+                                style="margin-right: -24px;margin-top: -12px;">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </button>
+                        <div class="menubtn ng-binding" ng-click="updatemenucontent($index,'level1')">
+                            Powered by Engati
+                        </div>
+                        <div class="submenubtn ng-hide" ng-show="menubtn.type=='nested'"
+                             ng-click="showsubmenu($index,'level2')">
+                            <div class="fbsubmenulink">Submenu</div>
+                        </div>
+                    </div>
+                    <!-- end ngRepeat: menubtn in fb_menu_payload[0].call_to_actions track by $index -->
+                    <div class="custom_carousel_buttonname fbmenuitem menubtn"
+                         ng-show="fb_menu_payload[0].call_to_actions.length
+																		<3" ng-click="displaymenupopup('level1')"
+                         style="width: 100%;">
+                        + Add Button
+
+                    </div>
+                    <div class="custom_carousel_buttonname fbmenuitem">
+                        <div style="display: inline;" class="ng-binding">Powered by Engati</div>
+                    </div>
+                </div>
+                <div class="col-md-3 fbmenubox ng-hide"
+                     ng-show="levelshow1 == 'level2' &amp;&amp; fb_menu_payload[0].call_to_actions[level1]">
+                    <center>
+                        <h5 class="menuhead ng-binding"></h5>
+                    </center>
+                    <a class="submenuback" ng-click="closesubmenu('level2')">
+                        <i class="ti-angle-left"></i>
+                    </a>
+                    <!-- ngRepeat: submenu1 in fb_menu_payload[0].call_to_actions[level1].call_to_actions track by $index -->
+                    <div class="custom_carousel_buttonname fbmenuitem menubtn ng-hide"
+                         ng-show="fb_menu_payload[0].call_to_actions[level1].call_to_actions.length
+																			<5"
+                         ng-click="displaymenupopup('level2')" style="width: 100%;">
+                        + Add Button
+
+                    </div>
+                </div>
+                <div class="col-md-3 fbmenubox ng-hide"
+                     ng-show="levelshow2 == 'level3' &amp;&amp; fb_menu_payload[0].call_to_actions[level1].call_to_actions[level2]">
+                    <center>
+                        <h5 class="menuhead ng-binding"></h5>
+                    </center>
+                    <a class="submenuback" ng-click="closesubmenu('level3')">
+                        <i class="ti-angle-left"></i>
+                    </a>
+                    <!-- ngRepeat: submenu2 in fb_menu_payload[0].call_to_actions[level1].call_to_actions[level2].call_to_actions track by $index -->
+                    <div class="custom_carousel_buttonname fbmenuitem menubtn ng-hide"
+                         ng-show="fb_menu_payload[0].call_to_actions[level1].call_to_actions[level2].call_to_actions.length
+																				<5"
+                         ng-click="displaymenupopup('level3')" style="width: 100%;">
+                        + Add Button
+
+                    </div>
+                </div>
+            </div>
+            <center>
+                <button class="btn connect-btn" ng-click="save_persistent_menu()" ng-show="is_facebook_configured"
+                        style="">Save Menu
+                </button>
+            </center>
+            <br>
+        </div>
+    </div>
+    <div ng-show="setup_page == 3" class="mt4 setup_page1">
+        <!--3rd setup page of bot creation-->
+        <div class="container">
+            <div class="row">
+                <div>
+                    Choose Inventory File
+
+
+                    <input class="pull-right" type="file" accept="*" file-model="myFile"/>
+                </div>
+            </div>
+            <div class="row">
+                Do you have in deals/offers mentioned in uploaded file
+
+                <span class="px1">/</span>
+                <div class=" button custom-select" style="display: inline-block;border:1px solid #bdbdbd9e;">
+                    <select style=" padding:5px" ng-model="deals_status" ng-options="x for x in [true,false]"
+                            title="productLine" ng-change="getAttributesFromLink(productLineSelected)"
+                            class="ng-pristine ng-valid ng-empty ng-touched">
+                        <option value="" class="" ng-disabled="1">Choose</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="InputGroup mt3" style="display:flex">
+                    <label class="label">
+                        Contact number for any communication
+
+                        <span class="optional">(optional)</span>
+                    </label>
+                    <div class="Input">
+                        <input style="width: 140%;" type="number" value="" ng-model="contact_number"
+                               class="rc-field" autocomplete="" placeholder="Enter your mobile number here">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display:flex">
+                <div ng-click="uploadFile();upload_started=1"
+                     ng-class="(deals_status!=null && myFile!= null)?'':'isDisabled'"
+                     tabindex="0" class="btn btn-primary app-bg-color mt3">
+                    <div class="btn--content">
+                        </span> Submit
+                    </div>
+
+                </div>
+                <div ng-show="upload_started" style="display: flex; padding-top: 25px; padding-left: 20px;">
+                    <div class='progress-bar'>
+                        <div class='progress-bar-bar' ng-style="{width: currentProgress }"></div>
+                    </div>
+                    <span class="h6 italic" style="margin-left:5px">(do not refresh or go back till file uploads completely)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-offset-5">
+        <!--Next and Prev buttons to navigate among different setup pages-->
+        <div ng-click="setup_page = setup_page-1 "
+             ng-class="( (setup_page == 2 || setup_page == 3) && (new_bot.bot_type!='' && new_bot.country!=''))?'':'isDisabled'"
+             tabindex="0" class="btn btn-primary app-bg-color mt3 ">
+            <div class="btn--content"><span class="glyphicon glyphicon-chevron-left"></span> Back</div>
+        </div>
+        <div ng-click="setup_page = setup_page+1 "
+             ng-class="((setup_page == 2  && newBotCreated)  || ((setup_page == 1 ) && ( bot_name_selected && country_selected )) )?'':'isDisabled'"
+             tabindex="0" class="btn btn-primary app-bg-color mt3 ">
+            <div class="btn--content"> Next <span class="glyphicon glyphicon-chevron-right"></span></div>
+        </div>
+    </div>
+
+</form>

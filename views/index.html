@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="app" >
+<head>
+    <meta charset="utf-8"/>
+    <base href="/chatbot-solution">
+    <title> Selekt - Engage your users with fashion chatbot without any coding </title>
+    <!--static css files-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link href="/chatbot-solution/app-content/umega.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/chatbot-solution/app-content/custom.css"/>
+    <link href="/chatbot-solution/app-content/app.css" rel="stylesheet"/>
+    <link href="/chatbot-solution/app-content/base.css" rel="stylesheet"/>
+    <link href="/chatbot-solution/app-content/angular-confirm.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://engati.com/assets/icons/icons.css"/>
+    <link rel="shortcut icon" type="image/png" href="/chatbot-solution/app-images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="ng-cloak">
+<div ng-app="app">
+    <div id="root">
+        <div class="App" data-reactroot="" data-reactid="1" data-react-checksum="1658444098">
+            <div class="Toasts" data-reactid="2"></div>
+            <!--Header element-->
+            <div class="Header flex" data-reactid="3">
+                <div class="flex ml2 mr2" data-reactid="4">
+                    <a alt="Selekt HOME" class="Header-item link--silent"
+                       href="/chatbot-solution"
+                       data-reactid="5">
+                        <img class="Header-logo"
+                             src="/chatbot-solution/app-images/logo1.png"
+                             alt="Selekt logo"></a></div>
+                <div class="flex flex-grow hide-mobile" data-reactid="7">
+
+                    <a title="about us" class="NavItem" href="#!/about-us" data-reactid="65">About us</a><a
+                        title="tutorial"
+                        class="NavItem"
+                        href="#!/tutorial">Tutorial</a>
+                    <a title="Dashboard" ng-class="route=='#!/dashboard'?'active':''" class="NavItem ng-cloak" ng-show="userLogged" href="#!/dashboard">Dashboard</a>
+                    <a title="login" class="NavItem ml-auto ng-cloak" ng-show="!userLogged" ng-class="path('#!/login')"
+                       href="#!/login" data-reactid="67">Login</a>
+                    <div class="Header-item mr2 ml2 ng-cloak" data-reactid="68">
+                        <a class="btn btn-action bold" style="font-weight:bold" ng-show="!userLogged" title="signup" href="#!/signup" data-reactid="69">
+                            Sign up</a>
+                    </div>
+                    <div class="ml-auto ProfileDropDown ng-cloak" ng-show="userLogged" data-reactid="72">
+                       <div class="app-bg-color " ng-init="toggle=0" ng-click="toggle=!toggle" data-reactid="73" style="text-transform:uppercase;float: right;padding: 7px 12px;margin:  5px 25px;color: white;border-radius: 69px;">
+                            {{globals.clientData.company_name[0]}}
+                        </div>
+                        <div id="dropdown" style="" class="dropdown" ng-cloak ng-show="toggle"><a title="new"
+                                                                                         class="dropdown-item hide-medium"
+                                                                                         href="#!/newbot"><i
+                                class="s-icon ion-plus mr1"></i><!-- react-text: 157 -->New bot<!-- /react-text -->
+                        </a><a title="documentation" class="dropdown-item hide-medium" href="#!/docs">Documentation</a><a
+                                title="bots" class="dropdown-item" style="text-transform:uppercase" href="#!/dashboard">{{globals.clientData.company_name}}</a><a
+                                title="settings" class="dropdown-item" href="#!/settings">
+                            <div>Settings</div>
+                        </a>
+                            <div class="dropdown-item"><a href="#!/logout">Logout</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }"-->
+                 <!--ng-if="flash" ng-bind="flash.message"></div>-->
+            <!--angular view-->
+            <div ng-view></div>
+        </div>
+    </div>
+</div>
+
+<!--static js files-->
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+<script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+<script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
+<script src="/chatbot-solution/app.js"></script>
+<script src="/chatbot-solution/app-services/authentication.service.js"></script>
+<script src="/chatbot-solution/app-services/flash.service.js"></script>
+
+<!-- Real user service that uses an api -->
+<!-- <script src="app-services/user.service.js"></script> -->
+
+<!-- Fake user service for demo that uses local storage -->
+<script src="/chatbot-solution/app-services/user.service.local-storage.js"></script>
+
+<script src="/chatbot-solution/home/home.controller.js"></script>
+<script src="/chatbot-solution/login/login.controller.js"></script>
+<script src="/chatbot-solution/forgot-password/forgot.controller.js"></script>
+<script src="/chatbot-solution/register/register.controller.js"></script>
+<script src="/chatbot-solution/dashboard/dashboard.controller.js"></script>
+<script src="/chatbot-solution/newbot/newbot.controller.js"></script>
+<script src="/chatbot-solution/login/logout.controller.js"></script>
+<script src="/chatbot-solution/update-inventory/update.controller.js"></script>
+<script src="/chatbot-solution/angular-easyfb.js"></script>
+<!-- <script src="https://connect.facebook.net/en_US/all.js"></script> -->
+<script src="/chatbot-solution/app-services/file-upload.js"></script>
+<script src="/chatbot-solution/js/angular-confirm.min.js"></script>
+<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+<script src="/chatbot-solution/node_modules/ngclipboard/dist/ngclipboard.min.js"></script>
+</body>
+</html>

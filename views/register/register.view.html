@@ -1,0 +1,55 @@
+<!--Register view-->
+<div class="flex-grow flex flex-column" data-reactid="104">
+    <div class="Signup py3 mb4"><!-- react-empty: 214 -->
+        <div class="auth-form p3 mx-auto">
+            <div class="Signup--Header mb3">
+                <div class="flex flex-content-center"><img
+                        src="/chatbot-solution/app-images/selekt_logo_new.png" class="Signup--Logo"
+                        alt="Selekt logo"></div>
+                <h1 class="title--secondary center">Sign up</h1></div>
+            <form name="form" role="form">
+                <div class="InputGroup mb2 form-group" >
+                    <div class="w100 flex flex-stretch flex-content-between"><label class="label left-align">Email
+                        address</label><span class="c-red-900 s-text right-align"></span></div>
+                    <div class="Input"><input type="email" name="email" value="" required ng-model="email" class="rc-field icon">
+                        <i ng-show="!form.email.$valid && form.email.$touched" class=" error_icon fa fa-times-circle" aria-hidden="true"></i>
+                        <i ng-show="form.email.$valid && form.email.$touched" class=" success_icon fa fa-check-circle " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="InputGroup mb2 form-group">
+                    <div class="w100 flex flex-stretch flex-content-between"><label
+                            class="label left-align">Company / Brand name<br>
+                            <span class="h6 italic">( This name shall appear as your brand name in bot )</span>
+                    </label><span class="c-red-900 s-text right-align"></span>
+                    </div>
+                    <div class="Input"><input type="text" name="comapanyName" required ng-model="comapanyName" class="rc-field icon">
+                        <i ng-show="!form.comapanyName.$valid && form.comapanyName.$touched" class=" error_icon fa fa-times-circle" aria-hidden="true"></i>
+                        <i ng-show="form.comapanyName.$valid && form.comapanyName.$touched" class=" success_icon fa fa-check-circle " aria-hidden="true"></i></div>
+                </div>
+                <div class="InputGroup mb2 form-group">
+                    <div class="w100 flex flex-stretch flex-content-between"><label
+                            class="label left-align">Password</label><span class="c-red-900 s-text right-align"></span>
+                    </div>
+                    <div class="Input"><input type="password" name="password" required value="" ng-model="password" ng-change="vm.clearMessages()" class="rc-field icon">
+                        <i ng-show="!form.password.$valid && form.password.$touched" class=" error_icon fa fa-times-circle" aria-hidden="true"></i>
+                        <i ng-show="form.password.$valid && form.password.$touched" class=" success_icon fa fa-check-circle " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right-align form-actions">
+                    <div tabindex="0" class="btn btn-action success" ng-disabled="!password || !email || !comapanyName || progress" ng-click="vm.register()">
+                        <div class="btn--content" >Register</div>
+                    </div>
+                </div>
+                <div class="center">
+                    <img ng-show="progress" src="/chatbot-solution/app-images/gif/in_progress.gif" class="progress-status"/>
+                    <span class="no-success" ng-show="error && !progress">{{errorMessage}}</span>
+                    <span class="success-msg text-center" ng-show="success">{{successMessage}}</span>
+                </div>
+            </form>
+        </div>
+        <div class="center">
+            <p class="mb2 mt2">or</p>
+            <p class="m-text bold"><!-- react-text: 251 -->Already have an account?<!-- /react-text -->
+                <!-- react-text: 252 --> <!-- /react-text --><a href="#!/login">Login</a></p></div>
+    </div>
+</div>

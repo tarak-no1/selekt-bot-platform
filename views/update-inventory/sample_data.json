@@ -1,0 +1,182 @@
+[
+    {
+        "pdpData": {
+            "landingPageUrl": "http://www.makemechic.com/products/Cut-Out-Front-Striped-Side-Glitter-Dress-62524.html", 
+		}, 
+        "deal": false, 
+        "product_filter": {
+            "dress_shape": "bodycon", 
+            "pattern_type": "na", 
+            "surface_styling": "cut out, zipper", 
+            "body_shape_id": "na", 
+            "discount_price": 21.0, 
+            "knit_or_woven": "na", 
+            "year": "na", 
+            "age_group": "adults women", 
+            "broad_category": "topwear", 
+            "display_name": "cut out front striped side glitter dress", 
+            "fabric": "80% nylon, 20% spandex", 
+            "all_size": [
+                "xs", 
+                " s", 
+                " m", 
+                " l"
+            ], 
+            "lining": "na", 
+            "fabric_type": "na", 
+            "season": "summer", 
+            "usage": "na", 
+            "brand": "makemechic", 
+            "size_availability": [
+                true, 
+                true, 
+                true, 
+                true
+            ], 
+            "website": "makemechic", 
+            "dress_fit": "na", 
+            "product_desription": "na", 
+            "price": 21.0, 
+            "hemline": "na", 
+            "fashion_type": "fashion", 
+            "fabric_2": "na", 
+            "fabric_3": "na", 
+            "discount_percent": 0.0, 
+            "care": "na", 
+            "product_line": "dresses", 
+            "neck": "stand collar", 
+            "sleeve": "no sleeves", 
+            "gender": "female", 
+            "colour": "black", 
+            "sub_trend": "na", 
+            "sleeve_type": "na", 
+            "fashion_category": "apparel", 
+            "transparency": "na", 
+            "pattern": "striped", 
+            "occasion": "weekend casual", 
+            "dress_length": "maxi"
+        },      
+        "style_images": {
+            "default": {
+                "imageURL": "http://img.ltwebstatic.com/images2_pi/2018/04/08/1523176658830796942_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images2_pi/2018/04/08/1523176658830796942_thumbnail_240x319.jpg"
+                }
+            }, 
+            "front": {
+                "imageURL": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766563664512394_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766563664512394_thumbnail_240x319.jpg"
+                }
+            }, 
+            "right": {
+                "imageURL": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766572829335260_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766572829335260_thumbnail_240x319.jpg"
+                }
+            }, 
+            "back": {
+                "imageURL": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766563307252104_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766563307252104_thumbnail_240x319.jpg"
+                }
+            }, 
+            "left": {
+                "imageURL": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766571098455975_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images2_pi/2018/04/08/15231766571098455975_thumbnail_240x319.jpg"
+                }
+            }
+        }
+    }, 
+    {
+        "pdpData": { 
+            "landingPageUrl": "http://www.makemechic.com/products/Off-Shoulder-Puff-Sleeve-Stripe-Dress-with-Drawstring-Detail-CREAM-RED-59118.html", 
+        }, 
+        "deal": false,  
+        "product_filter": {
+            "dress_shape": "straight regular", 
+            "pattern_type": "na", 
+            "surface_styling": "cut out, knot", 
+            "body_shape_id": "na", 
+            "discount_price": 15.0, 
+            "knit_or_woven": "na", 
+            "year": "na", 
+            "age_group": "adults women", 
+            "broad_category": "topwear", 
+            "display_name": "off shoulder puff sleeve stripe dress with drawstring detail cream red", 
+            "fabric": "70% rayon, 30% polyester", 
+            "all_size": [
+                "xs", 
+                " s", 
+                " m", 
+                " l"
+            ], 
+            "lining": "na", 
+            "fabric_type": "na", 
+            "season": "spring", 
+            "usage": "na", 
+            "brand": "makemechic", 
+            "size_availability": [
+                true, 
+                true, 
+                true, 
+                true
+            ], 
+            "website": "makemechic", 
+            "dress_fit": "h", 
+            "product_desription": "na", 
+            "price": 15.0, 
+            "hemline": "na", 
+            "fashion_type": "fashion", 
+            "fabric_2": "na", 
+            "fabric_3": "na", 
+            "discount_percent": 0.0, 
+            "care": "na", 
+            "product_line": "dresses", 
+            "neck": "high neck", 
+            "sleeve": "three quarter length sleeve", 
+            "gender": "female", 
+            "colour": "multi", 
+            "sub_trend": "na", 
+            "sleeve_type": "bishop sleeves", 
+            "fashion_category": "apparel", 
+            "transparency": "na", 
+            "pattern": "striped", 
+            "occasion": "beach", 
+            "dress_length": "mini"
+        }, 
+        "style_images": {
+            "default": {
+                "imageURL": "http://img.ltwebstatic.com/images/pi/201802/19/15197854915357580046_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images/pi/201802/19/15197854915357580046_thumbnail_240x319.jpg"
+                }
+            }, 
+            "front": {
+                "imageURL": "http://img.ltwebstatic.com/images/pi/201802/72/15197854896129164577_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images/pi/201802/72/15197854896129164577_thumbnail_240x319.jpg"
+                }
+            }, 
+            "right": {
+                "imageURL": "http://img.ltwebstatic.com/images/pi/201802/73/15197854914056172803_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images/pi/201802/73/15197854914056172803_thumbnail_240x319.jpg"
+                }
+            }, 
+            "back": {
+                "imageURL": "http://img.ltwebstatic.com/images/pi/201802/f2/15197854906407913685_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images/pi/201802/f2/15197854906407913685_thumbnail_240x319.jpg"
+                }
+            }, 
+            "left": {
+                "imageURL": "http://img.ltwebstatic.com/images/pi/201802/72/15197854901402383955_thumbnail_240x319.jpg", 
+                "resolutions": {
+                    "360X480": "http://img.ltwebstatic.com/images/pi/201802/72/15197854901402383955_thumbnail_240x319.jpg"
+                }
+            }
+        }
+    }
+]

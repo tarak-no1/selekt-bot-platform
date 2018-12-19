@@ -1,0 +1,144 @@
+<section class="dashboard-v3" style="padding:5%">
+	<div class="min-h bots-new-list">
+		<div>
+			<div class="ng-scope">
+				<div class="bots-list">
+					<!--create new bot button-->
+					<div class="bot-list-button">
+						<a style="width: 217px;" class=" bold button-ver2 orange-rounded add app-bg-color" href="#!/newbot">
+							<span class="bold h4">+ </span> Create a new bot
+
+						</a>
+					</div>
+					<!--listing all bots-->
+					<div style="width:45%" class="bot_details" ng-repeat="bot in all_bots | orderBy : '-date_added' track by bot.bot_id">
+						<button  class="h4 glyphicon glyphicon-remove pull-right" ng-click="deleteBot(bot.bot_type)"></button>
+						<div class="container">
+							<div class="text-container col-md-6">
+								<div>
+
+									<div style="font-weight:bold" class="h3 app-color">
+										<img src="/chatbot-solution/app-images/icons/bot-icon.png" alt="" style="display:inline;height:40px"> {{bot.bot_name}}
+
+										</div>
+                                    <!--if bot.status == 0 means , the bot is not connected yet  , so we have to consider the launch time as estimated time and staus as evaluating-->
+										<div ng-if="!bot.inventory_status">
+											<div>
+												<span class="bold">Status</span> : Evaluating
+											</div>
+											<div>
+												<span class="bold">Estimated time</span> : {{bot.launch_time}}
+											</div>
+										</div>
+                                     <!--if bot.status == 1 means , the bot is  connected   , so we have to consider the launch time as launch time and staus as connected-->
+
+										<div ng-if="bot.status == '1'">
+											<div>
+												<span class="bold">Status</span> : Launch ready
+											</div>
+											<div>
+												<span class="bold">Launch time</span> : {{bot.launch_time}}
+											</div>
+										</div>
+										<div>
+											<div ng-if="bot.linked_page_name != ''" class="connect-to">
+												<button class="bold">
+													<a href="#!/connect/{{bot.bot_type}}">Connected to  ' {{bot.linked_page_name}} '</a>
+												</button>
+											</div>
+											<div ng-if="bot.linked_page_name == ''" class="connect-to">
+												<button class="bold">
+													<a href="#!/connect/{{bot.bot_type}}">Connect to  Facebook</a>
+												</button>
+											</div>
+											<div class="connect-to" style="    display: flex;width: 200%;">
+												<button class="bold">
+													<a href="#!/update-inventory" setup_page=3>Update inventory</a>
+												</button>
+												<div ng-show="bot.inventory_updated_time" style="padding-left:5px;margin-top:8%" class="h6">
+													(
+													<span class="bold h6">Last updated on: </span> {{bot.inventory_updated_time | date:'dd/MM/yyyy'}}
+													)
+												</div>
+											</div>
+											<div class="connect-to" >
+												<button class="bold" ng-click="openContactUs(bot.bot_id);">
+													Contact us
+												</button>
+
+											</div>
+
+
+										</div>
+                                    <!--converting timestamp into user readable format-->
+
+									</div>
+								</div>
+							<div class="col-md-6">
+								<div>
+									<div class="connect-to">
+										<button class="bold">
+											<img src="/chatbot-solution/app-images/ico_messenger.png" class="img1" style="display: inline;">
+											<a href="{{bot.messenger_link}}" target="_blank">Try this bot</a>
+										</button>
+									</div>
+									<ul >
+										<li class="h5">* This will only be visible to page admins and testers.</li>
+										<li class="h5">* Make this public by following these
+											<a href="https://developers.facebook.com/docs/messenger-platform/submission-process" target="_blank">facebook guidelines</a>.</li>
+									</ul>
+								</div>
+								<div style="padding-top:50px">
+									<span class="bold h5">Is bot working?</span>
+									<div style="border:1px solid lavender;display:inline-block">
+										<button ng-click="changeBotWorkingStatus(bot.bot_id,true)" ng-class="bot.working_status?'bot-btn-success':''" class="btn">Yes</button>
+										<button ng-click="changeBotWorkingStatus(bot.bot_id,false)" ng-class="!bot.working_status?'bot-btn-danger':''" class="btn ">No</button>
+									</div>
+
+								</div>
+							</div>
+							<span  style="margin-top: 23%;" class="h6 pull-right">
+											<span class="bold">Created on </span> {{bot.created_on | date:'dd/MM/yyyy'}}
+										</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="contact-us well"  ng-show="contact_us==1">
+		<form class="container">
+			<button class="h4 glyphicon glyphicon-remove pull-right" ng-click="contact_us=0"></button>
+			<div class="row center bold" style="border-bottom:2px solid lavender">Contact us</div>
+
+			<div class="row">
+				<div style="">
+					Email : <div class="Input">
+					<input type="email" required="" name="email" value=""
+						   ng-model="contact_us_email" class="ng-touched"  style="border:2px solid lavender" >
+					      </div>
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div style="">
+					Message :
+					<div class="Input" style="border:2px solid lavender">
+						<textarea style="min-width:100%;max-height:150px;height:150px" type="text"
+							  required name="text" value="" ng-model="contact_us_message" >
+						</textarea>
+                    </div>
+
+
+				</div>
+			</div>
+			<div class="row center">
+				<div ng-class="contact_us_message  && contact_us_email ?'':'isDisabled'" tabindex="0"
+					 class="btn btn-primary app-bg-color mt3">
+            <div class="btn--content" ng-click="sendMail()"> Submit</div>
+        </div>
+			</div>
+		</form>
+	</div>
+	</section>

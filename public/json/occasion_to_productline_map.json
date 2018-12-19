@@ -1,0 +1,963 @@
+{
+  "winter office wear sweaters": {
+    "type": "occasions",
+    "synonyms": [
+      "winterofficewear",
+      "winter office wear",
+      "winter office outfit"
+    ],
+    "values": [
+      "sweaters"
+    ]
+  },
+  "daily wear": {
+    "type": "occasions",
+    "synonyms": [
+      "daily wear",
+      "home wear",
+      "wear at home",
+      "everyday wear",
+      "normal wear",
+      "dailywear",
+      "hostel wear"
+    ],
+    "values": [
+      "sweaters",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "shorts",
+      null,
+      "tshirts",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "college wear": {
+    "type": "occasions",
+    "synonyms": [
+      "college",
+      "college wear",
+      "student wear",
+      "student"
+    ],
+    "values": [
+      "sweaters",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "shorts",
+      null,
+      "tshirts",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "casual winter wear sweaters": {
+    "type": "occasions",
+    "synonyms": [
+      "casual wear in winter",
+      "casuals in winter",
+      "wintercasual wear",
+      "winter casual wear",
+      "casual winter wear",
+      "casualwinter wear"
+    ],
+    "values": [
+      "sweaters",
+      "sweatshirts"
+    ]
+  },
+  "smart casual": {
+    "type": "occasions",
+    "synonyms": [
+      "smart casuals",
+      "smart casual wear",
+      "smart casual"
+    ],
+    "values": [
+      "sweaters",
+      "jeggings",
+      "tops",
+      "jackets",
+      "sweatshirts",
+      "tshirts"
+    ]
+  },
+  "night casual": {
+    "type": "occasions",
+    "synonyms": [
+      "night casual",
+      "night casuals",
+      "night wear",
+      "nightwear"
+    ],
+    "values": [
+      "sweaters",
+      "jeggings",
+      "shirts",
+      "tops",
+      "dresses",
+      "sweatshirts",
+      "shorts",
+      null,
+      "tshirts",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "party winter wear sweaters": {
+    "type": "occasions",
+    "synonyms": [
+      "party winter wear sweaters"
+    ],
+    "values": [
+      "sweaters"
+    ]
+  },
+  "casual wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "casual wear",
+      "casual",
+      "casuals"
+    ],
+    "values": [
+      "sweaters",
+      "jeggings",
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      null,
+      "tshirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "office sweaters": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "office wear",
+      "office sweaters"
+    ],
+    "values": [
+      "sweaters"
+    ]
+  },
+  "winter wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "winterwear",
+      "winter",
+      "winter outfit",
+      "winter wear"
+    ],
+    "values": [
+      "sweaters",
+      "shirts",
+      "tops",
+      "dresses",
+      "sweatshirts",
+      "jumpsuits",
+      null,
+      "tshirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "festival": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "festival",
+      "festivals"
+    ],
+    "values": [
+      "jeggings",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits"
+    ]
+  },
+  "office wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "office wear",
+      "office",
+      "work",
+      "workwear",
+      "work wear",
+      "officewear"
+    ],
+    "values": [
+      "jeggings",
+      "shirts",
+      "tops",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "blazers",
+      "trousers",
+      null
+    ]
+  },
+  "indian wedding": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "indian wedding"
+    ],
+    "values": [
+      "jeggings",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits"
+    ]
+  },
+  "indian engagement guest": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "indian engagement guest",
+      "indian engagement wear",
+      "indian engagement"
+    ],
+    "values": [
+      "jeggings",
+      "tops",
+      "dresses",
+      "trousers"
+    ]
+  },
+  "party winter wear": {
+    "type": "occasions",
+    "synonyms": [
+      "party winter wear",
+      "winter party wear",
+      "winter party",
+      "party winter",
+      "party in winter"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "dresses",
+      "sweatshirts",
+      "skirts",
+      "blazers",
+      "jeans"
+    ]
+  },
+  "smart casual": {
+    "type": "occasions",
+    "synonyms": [
+      "smart casual"
+    ],
+    "values": [
+      "shirts"
+    ]
+  },
+  "evening party": {
+    "type": "occasions",
+    "synonyms": [
+      "evening party",
+      "evening party wear"
+    ],
+    "values": [
+      "shirts",
+      "jackets",
+      "skirts",
+      null,
+      "trousers",
+      "jeans"
+    ]
+  },
+  "honeymoon": {
+    "type": "occasions",
+    "synonyms": [
+      "honeymoon",
+      "honey moon"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "capris",
+      "skirts",
+      "shorts",
+      null,
+      "tshirts",
+      "jeans"
+    ]
+  },
+  "date night": {
+    "type": "occasions",
+    "synonyms": [
+      "date night",
+      "date",
+      "blind date"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "skirts",
+      null,
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "casual winter wear": {
+    "type": "occasions",
+    "synonyms": [
+      "casual wear in winter",
+      "casuals in winter",
+      "wintercasual wear",
+      "winter casual wear",
+      "casual winter wear",
+      "casualwinter wear"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "graduation": {
+    "type": "occasions",
+    "synonyms": [
+      "graduate",
+      "graduation",
+      "convocated",
+      "convocation",
+      "for graduation wear",
+      "graduation look"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "anniversary": {
+    "type": "occasions",
+    "synonyms": [
+      "anniversary",
+      "anniversary party"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "skirts",
+      null,
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "office party": {
+    "type": "occasions",
+    "synonyms": [
+      "office party",
+      "business party"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "blazers",
+      "trousers",
+      "jeans",
+      null
+    ]
+  },
+  "cocktail party": {
+    "type": "occasions",
+    "synonyms": [
+      "cocktail party",
+      "cocktail"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "birthday": {
+    "type": "occasions",
+    "synonyms": [
+      "birthday"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "skirts",
+      null,
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "office winter wear": {
+    "type": "occasions",
+    "synonyms": [
+      "office wear in winter",
+      "winter office wear",
+      "office winter wear",
+      "office winterwear"
+    ],
+    "values": [
+      "shirts"
+    ]
+  },
+  "beach wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "beach wear",
+      "beach",
+      "sea",
+      "sea wear"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "dresses",
+      "jumpsuits",
+      "capris",
+      "skirts",
+      "shorts",
+      "tshirts",
+      "trousers"
+    ]
+  },
+  "special occasion": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "special occasion",
+      "different occasions",
+      "personal occasions",
+      "personal occasion",
+      "different occasion",
+      "other occasion"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "shorts",
+      "tshirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "western engagement guest": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "western engagement,engagement guest",
+      "western engagement look",
+      "western engagement guest",
+      "western engagement wear"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "western wedding": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "for western wedding guest",
+      "western wedding",
+      "western wedding guest",
+      "western wedding look",
+      "for western wedding"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "blazers",
+      "trousers"
+    ]
+  },
+  "party wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "party wear",
+      "party"
+    ],
+    "values": [
+      "shirts",
+      "tops",
+      "jackets",
+      "dresses",
+      "jumpsuits",
+      "skirts",
+      "shorts",
+      null,
+      "blazers",
+      "trousers",
+      "jeans"
+    ]
+  },
+  "evening party look": {
+    "type": "occasions",
+    "synonyms": [
+      "evening party look"
+    ],
+    "values": [
+      "tops",
+      "dresses"
+    ]
+  },
+  "pool party": {
+    "type": "occasions",
+    "synonyms": [
+      "pool party",
+      "beach party"
+    ],
+    "values": [
+      "tops",
+      "jackets",
+      "dresses",
+      "skirts",
+      "shorts",
+      null,
+      "tshirts",
+      "trousers"
+    ]
+  },
+  "clubbing": {
+    "type": "occasions",
+    "synonyms": [
+      "clubbing",
+      "clubs",
+      "night club",
+      "night clubs"
+    ],
+    "values": [
+      "tops",
+      "jackets",
+      "dresses",
+      "skirts",
+      "shorts",
+      "blazers",
+      "jeans"
+    ]
+  },
+  "winter office wear": {
+    "type": "occasions",
+    "synonyms": [
+      "winterofficewear",
+      "winter office wear",
+      "winter office outfit"
+    ],
+    "values": [
+      "tops",
+      "dresses",
+      "jumpsuits",
+      "trousers"
+    ]
+  },
+  "office wear look": {
+    "type": "occasions",
+    "synonyms": [],
+    "values": [
+      "jackets"
+    ]
+  },
+  "party winter": {
+    "type": "occasions",
+    "synonyms": [
+      "party winter"
+    ],
+    "values": [
+      "jackets",
+      null
+    ]
+  },
+  "office winter wear jackets": {
+    "type": "occasions",
+    "synonyms": [
+      "office winter wear jackets"
+    ],
+    "values": [
+      "jackets"
+    ]
+  },
+  "beach wear look": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "beach wear",
+      "beach",
+      "sea",
+      "sea wear"
+    ],
+    "values": [
+      "jackets"
+    ]
+  },
+  "winter look": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "winter look"
+    ],
+    "values": [
+      "jackets"
+    ]
+  },
+  "sports wear": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "sports wear",
+      "sport wear",
+      "sport outfit",
+      "sports outfit"
+    ],
+    "values": [
+      "jackets",
+      "sweatshirts",
+      "capris",
+      "shorts",
+      "tshirts",
+      "trousers"
+    ]
+  },
+  "smart casual": {
+    "type": "occasions",
+    "synonyms": [
+      "smart casuals",
+      "smart casual wear",
+      "smart casual"
+    ],
+    "values": [
+      "dresses",
+      "blazers"
+    ]
+  },
+  "pool party wear": {
+    "type": "occasions",
+    "synonyms": [
+      "pool party wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "honeymoon wear": {
+    "type": "occasions",
+    "synonyms": [
+      "honeymoon wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "evening party wear": {
+    "type": "occasions",
+    "synonyms": [
+      "evening party",
+      "evening party wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "date night wear": {
+    "type": "occasions",
+    "synonyms": [
+      "date night wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "winter party wear": {
+    "type": "occasions",
+    "synonyms": [
+      "winter party wear"
+    ],
+    "values": [
+      "jumpsuits",
+      "trousers"
+    ]
+  },
+  "smart casual wear": {
+    "type": "occasions",
+    "synonyms": [
+      "smart casuals",
+      "smart casual wear",
+      "smart casual"
+    ],
+    "values": [
+      "jumpsuits",
+      "jeans"
+    ]
+  },
+  "birthday wear": {
+    "type": "occasions",
+    "synonyms": [
+      "birthday wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "for winter casual wear": {
+    "type": "occasions",
+    "synonyms": [
+      "for winter casual wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "clubbing wear": {
+    "type": "occasions",
+    "synonyms": [
+      "clubbing wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "anniversary wear": {
+    "type": "occasions",
+    "synonyms": [
+      "anniversary wear"
+    ],
+    "values": [
+      "jumpsuits"
+    ]
+  },
+  "workout_capris": {
+    "type": "occasions",
+    "synonyms": [
+      "workout_capris"
+    ],
+    "values": [
+      "capris"
+    ]
+  },
+  "swimming": {
+    "type": "occasions",
+    "synonyms": [
+      "swimming costume",
+      "swimming",
+      "swim suit"
+    ],
+    "values": [
+      "capris"
+    ]
+  },
+  "for night casual wear": {
+    "type": "occasions",
+    "synonyms": [
+      "for night casual wear"
+    ],
+    "values": [
+      "skirts"
+    ]
+  },
+  "for daily wear": {
+    "type": "occasions",
+    "synonyms": [
+      "for daily wear"
+    ],
+    "values": [
+      "skirts"
+    ]
+  },
+  "for college wear": {
+    "type": "occasions",
+    "synonyms": [
+      "for college wear"
+    ],
+    "values": [
+      "skirts"
+    ]
+  },
+  "for smart casual wear": {
+    "type": "occasions",
+    "synonyms": [
+      "smart casuals",
+      "smart casual wear",
+      "smart casual"
+    ],
+    "values": [
+      "skirts"
+    ]
+  },
+  "winter party": {
+    "type": "occasions",
+    "synonyms": [
+      "winter party"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "club": {
+    "type": "occasions",
+    "synonyms": [
+      "club"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "winter casual": {
+    "type": "occasions",
+    "synonyms": [
+      "winter casual"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "beach": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "beach"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "western wedding guest": {
+    "type": "broad_occasions",
+    "synonyms": [
+      "western wedding guest"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "yoga": {
+    "type": "occasions",
+    "synonyms": [
+      "yoga"
+    ],
+    "values": [
+      "tshirts"
+    ]
+  },
+  "workout": {
+    "type": "occasions",
+    "synonyms": [
+      "workout",
+      "gym",
+      "gym wear",
+      "gymwear"
+    ],
+    "values": [
+      "tshirts"
+    ]
+  },
+  "for honeymoon": {
+    "type": "occasions",
+    "synonyms": [
+      "for honeymoon"
+    ],
+    "values": [
+      "trousers"
+    ]
+  },
+  "for casual winter wear": {
+    "type": "occasions",
+    "synonyms": [
+      "casual wear in winter",
+      "casuals in winter",
+      "wintercasual wear",
+      "winter casual wear",
+      "casual winter wear",
+      "casualwinter wear"
+    ],
+    "values": [
+      "trousers"
+    ]
+  },
+  "smart office casual": {
+    "type": "occasions",
+    "synonyms": [
+      "smart office casual"
+    ],
+    "values": [
+      "trousers"
+    ]
+  },
+  "office winter": {
+    "type": "occasions",
+    "synonyms": [
+      "office winter"
+    ],
+    "values": [
+      null
+    ]
+  },
+  "casual winter": {
+    "type": "occasions",
+    "synonyms": [
+      "casual winter"
+    ],
+    "values": [
+      null
+    ]
+  }
+}

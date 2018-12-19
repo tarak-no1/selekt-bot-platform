@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Verification</title>
+	<script>
+		ejs_data ="<%=source%>";
+		ejs_data = ejs_data.split('&#34;').join('"');
+		ejs_data = ejs_data.split('&amp;').join('&');
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+</head>
+<body ng-app="rzSliderDemo" ng-controller="MainCtrl">
+	<div class="container">
+		<div class="panel panel-default" style="margin-top: 30%">
+		  <div class="panel-body">
+		    {{msg}}
+		  </div>
+		</div>
+	</div>
+
+	<script>
+		var app = angular.module('rzSliderDemo', []);
+		app.controller('MainCtrl', function ($scope, $rootScope, $timeout,$http) {
+			let source = JSON.parse(window.ejs_data);
+			console.log("Source : ",source);
+			$scope.msg = source["message"];
+			$scope.status = source["verify_status"];
+			if(source["verify_status"])
+			{
+				setTimeout(function()
+        		{
+            		window.location.href = "https://www.selekt.in/chatbot-solution/";
+            	},1000);
+			}
+		});
+	</script>
+</body>
+</html>

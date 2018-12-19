@@ -1,0 +1,70 @@
+[
+  {
+    "attribute_path": "product_filter.discount_percent",
+    "display_name": "offers & discounts"
+  },
+  {
+    "attribute_path": "product_filter.surface_styling",
+    "display_name": "surface styling"
+  },
+  {
+    "attribute_path": "product_filter.brand",
+    "display_name": "brand"
+  },
+  {
+    "attribute_path": "product_filter.website",
+    "display_name": "website"
+  },
+  {
+    "attribute_path": "product_filter.colour",
+    "display_name": "colour"
+  },
+  {
+    "attribute_path": "product_filter.tops_length",
+    "display_name": "tops length"
+  },
+  {
+    "attribute_path": "product_filter.all_size",
+    "display_name": "size"
+  },
+  {
+    "attribute_path": "product_filter.discount_price",
+    "display_name": "price"
+  },
+  {
+    "attribute_path": "product_filter.knit_or_woven",
+    "display_name": "knit or woven"
+  },
+  {
+    "attribute_path": "product_filter.pattern_type",
+    "display_name": "pattern type"
+  },
+  {
+    "attribute_path": "product_filter.sleeve_type",
+    "display_name": "sleeve type"
+  },
+  {
+    "attribute_path": "product_filter.tops_type",
+    "display_name": "tops type"
+  },
+  {
+    "attribute_path": "product_filter.sleeve",
+    "display_name": "sleeve"
+  },
+  {
+    "attribute_path": "product_filter.pattern",
+    "display_name": "pattern"
+  },
+  {
+    "attribute_path": "product_filter.fabric",
+    "display_name": "fabric"
+  },
+  {
+    "attribute_path": "product_filter.neck",
+    "display_name": "neck"
+  },
+  {
+    "attribute_path": "product_filter.fit",
+    "display_name": "fit"
+  }
+]
